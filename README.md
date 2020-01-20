@@ -3,7 +3,9 @@ Coding Assessment 2019-2020 - Illumio PCE 2019
 
 2------------
 
-a. I tested my solution using the example inputs from the coding challenges. I also added a single edge case as I was running out of time.
+a. I tested my solution using the example inputs from the coding challenges. I also added a single edge case as I was running out of time. 
+If I had more time, I would have implemented a more sophisticated test suite using JUnit. I would add more test csv's with edge cases like
+small ranges, invalid inputs, and one-off errors.
 
 b. I decided to not implement a more memory efficient algorithm by combining ranges because it would make the runtime a lot longer. So,
 I decided to instead save every new rule as a separate range in four bins. Each bin represents udp/tcp or ingoing/outgoing rule.
@@ -26,6 +28,11 @@ instead of either index 0,1,2,3 of the arraylist.
 Another optimization would be to separate ranges from single ports/ip addresses. The problem with inputting individual ip/ports into
 a range class is that the range rule would essentially have the same memory allocation and runtime analysis as a single rule. So there are
 unneccesary space that is used up for single rules. 
+
+A last optimization would be to make better and more sophisticated test scripts/suites using JUnit. I did not have a lot of time to make test
+scripts, so I tested only one edge case and the cases given on the coding challenge document. I really wish I could include more edge cases. Another
+problem would be that if the inputs were not as clean as the document said, I would have to check for more invalid inputs. An example
+would be an invalid range like 200-150. So another optimization would be to check for these invalid inputs.
 
 d. I would like to thank the reviewer for taking their time looking over my code and hope to hear back some other great design
 ideas and optimizations that I have not listed. 
