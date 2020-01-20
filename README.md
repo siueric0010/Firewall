@@ -4,6 +4,7 @@ Coding Assessment 2019-2020 - Illumio PCE 2019
 2------------
 
 a. I tested my solution using the example inputs from the coding challenges. I also added a single edge case as I was running out of time. 
+The test cases are included in the main method of the Firewall class.
 If I had more time, I would have implemented a more sophisticated test suite using JUnit. I would add more test csv's with edge cases like
 small ranges, invalid inputs, and one-off errors.
 
