@@ -199,6 +199,8 @@ public class Firewall {
         System.out.println(fw.accept_packet("inbound", "udp", 24, "52.12.48.92")); // false
         System.out.println(fw.accept_packet("inbound", "udp", 54, "242.245.245.222")); // true
         System.out.println(fw.accept_packet("inbound", "udp", 54, "255.255.255.255")); // false, tests the edge case
+        System.out.println(fw.accept_packet("inbound", "udp", 54, "1.1.1.0")); // false, tests the edge case
+        System.out.println(fw.accept_packet("inbound", "udp", 54, "1.1.1.1")); // true
 
     }
 
